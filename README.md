@@ -44,7 +44,7 @@ sudo nano /etc/nut/ups.conf
 Add your UPS configuration:
 ```ini
 [<UPS_NAME>]
-driver = "<DRIVER>"
+driver = <DRIVER>
 port = /dev/ttyUSB0
 desc = "<DESCRIPTION>"
 ```
@@ -71,6 +71,17 @@ Add:
 [eng]
 password = <PASSWORD>
 upsmon primary
+```
+
+### Connect NUT User to Server
+*Direct the user to monitor and access the server*
+```bash
+sudo nano /etc/nut/upsmon.conf
+```
+
+Add:
+```ini
+MONITOR <USP_NAME>@localhost 1 eng <PASSWORD> primary
 ```
 
 ### Enable NUT Server Mode
