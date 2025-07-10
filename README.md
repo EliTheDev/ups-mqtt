@@ -2,6 +2,8 @@
 
 Quick setup guide to configure a Linux device (Raspberry Pi 2B in this example) as a UPS monitor with MQTT forwarding.
 
+Repository based on dniklewicz/ups-mqtt.
+
 ## Prerequisites
 
 - Raspberry Pi 2B
